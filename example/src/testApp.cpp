@@ -56,14 +56,14 @@ void testApp::draw()
 	int x = 20;
 	int y = imageIn.height + 40;
 	
-	ditherType == ORDERED_BAYER		? ofSetColor( 0xFF0000 ) : ofSetColor( 0xFFFFFF );
-	ofDrawBitmapString( "1) ordered bayer dithering",	x, y );
+	ditherType == ORDERED_BAYER		? ofSetColor( ofColor :: magenta ) : ofSetColor( ofColor :: white );
+	ofDrawBitmapString( "1) ordered bayer dithering", x, y );
 	
-	ditherType == FLOYD_STEINBERG	? ofSetColor( 0xFF0000 ) : ofSetColor( 0xFFFFFF );
+	ditherType == FLOYD_STEINBERG	? ofSetColor( ofColor :: magenta ) : ofSetColor( ofColor :: white );
 	ofDrawBitmapString( "2) floyd steinberg dithering",	x, y += 20 );
 	
-	ditherType == ATKINSON			? ofSetColor( 0xFF0000 ) : ofSetColor( 0xFFFFFF );
-	ofDrawBitmapString( "3) atkinson dithering",		x, y += 20 );
+	ditherType == ATKINSON			? ofSetColor( ofColor :: magenta ) : ofSetColor( ofColor :: white );
+	ofDrawBitmapString( "3) atkinson dithering", x, y += 20 );
 }
 
 ///////////////////////////////////////////

@@ -1,0 +1,1 @@
+![Swipe View](https://github.com/julapy/ofxDither/raw/master/example/image/ofxDither.png)
