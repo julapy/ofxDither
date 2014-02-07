@@ -1,6 +1,4 @@
-#ifndef _TEST_APP
-#define _TEST_APP
-
+#pragma once
 
 #include "ofMain.h"
 #include "ofxDither.h"
@@ -12,7 +10,7 @@ enum
 	ATKINSON
 };
 
-class testApp : public ofBaseApp
+class ofApp : public ofBaseApp
 {
 
 public:
@@ -35,5 +33,3 @@ public:
 	ofImage		imageIn;
 	ofImage		imageOut;
 };
-
-#endif
