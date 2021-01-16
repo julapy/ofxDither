@@ -5,7 +5,7 @@ forked by dan buzzo dan@buzzo.com from https://github.com/julapy/ofxDither Jan 2
 
 ## revisions
 
-updated depratcated calls and moved src files into src folder
+updated deprecated calls and moved src files into src folder
 
  now working on openframeworks v 0.11.
 
