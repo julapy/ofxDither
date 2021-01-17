@@ -10,7 +10,7 @@ void ofApp::setup()
 	ofSetVerticalSync( true );
 	ofBackground( 0, 0, 0 );
 	
-	imageIn.loadImage( "lena_512x512.png" );
+	imageIn.load( "lena_512x512.png" );
 	
 	ditherType = ORDERED_BAYER;
 }
@@ -49,12 +49,12 @@ void ofApp::draw()
 	ofSetColor( 255, 255, 255 );
 	
 	imageIn.draw( 0, 0 );
-	imageOut.draw( imageIn.width, 0 );
+	imageOut.draw( imageIn.getWidth(), 0 );
 
 	//--- text info.
 	
 	int x = 20;
-	int y = imageIn.height + 40;
+	int y = imageIn.getHeight() + 40;
 	
 	ditherType == ORDERED_BAYER		? ofSetColor( ofColor :: magenta ) : ofSetColor( ofColor :: white );
 	ofDrawBitmapString( "1) ordered bayer dithering", x, y );
